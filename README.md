@@ -1,3 +1,5 @@
+## [Link to Team Crystallized Ember's Wiki 3](Wiki3ProgramDeepDive.md)
+
 # CSB310-Collab-Wiki-3-Prog-Lang-Deep-Dive
 Collaborative Wiki 3 - Programming Language Deep Dive
 
