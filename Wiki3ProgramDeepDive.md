@@ -40,6 +40,41 @@ are not supported in C++.
 ## Subprograms
     
 ## Abstract Data Types and Encapsulation Concepts
+
+### Author: Cheryl Moser
+
+C++ supports abstract data types (ADT) through classes and structs. A struct is 
+a type whose definition contains only data fields. For example: a struct for creating 
+a point in two-dimensional space would contain two data fields: x and y. A class 
+is a type containing data fields (data members), and member functions. Objects of
+the class (instances) can access the set of public methods. Member functions of
+a class are shared among all instances; however, instances have their own set
+of data members[1].
+
+The data members of an object can have different scopes. These include[1]:
+- *Static:*  Created with the "static" keyword inside the class definition and 
+    referenced directly by name. The lifetime of static members is for the duration
+    of the program execution. Static members are shared among class instances.
+    
+- *Stack dynamic:* Created in the variable declaration inside of a function, and 
+    also referenced directly. This member exists on the functions stack frame, and
+    it is destroyed at the end of function execution.
+    
+- *heap dynamic:* Declared as a class member, but it is referenced through pointers.
+    These members are created with the "new" operator, and they exist until manual
+    destruction is performed using the "delete" operator.
+
+Member functions can appear in the class body or in the class header. For cases 
+where they appear only in the header, or in both header and body, the function is 
+inlined, wherein function code is copied into the calling code. This eliminates
+the need for function calls, making the runtime more efficient. If the member
+function appears in the header-only, then its definition is outside of the class
+in a class interface[1].
+
+Furthermore, C++ uses public and private access modifiers, and in addition to constructors, 
+it has destructors that function similarly to the 'delete' operator. They are used 
+at the end of an object's lifetime for deallocating memory, returning resources 
+and cleaning up any open tasks[1].
     
 ## Object-Oriented Programming
     
