@@ -1,7 +1,8 @@
 (Table of contents will go here)
 
 # Programming Language Deep Dive: C++
-### Team Crystallized Ember
+
+### *Team Crystallized Ember*
 
 ## Data Types
 
@@ -36,6 +37,7 @@ is not a consideration, allowing conversion to be used freely. Multiple assignme
 are not supported in C++.
 
 ## Statement-Level Control Structures
+
 <img src=img/BingImageGen.jpg width="600"><br>
 <em>[2c] promp = Java, C, and C++, hanging out in a forest aliens contemplating the setting sun and what it all means</em>
 <P>C++ statement level control structures are the evolutionary step between the C language 
@@ -74,7 +76,6 @@ case expressions outside the top of the body of the “Switch” statement.
 As shown above C++ is the evolution steppingstone from C to Java. It is less restricted than Java and has more 
 capabilities than C.
 
-    
 ## Subprograms
     
 ## Abstract Data Types and Encapsulation Concepts
@@ -106,8 +107,7 @@ Member functions can appear in the class body or in the class header. For cases
 where they appear only in the header, or in both header and body, the function is 
 inlined, wherein function code is copied into the calling code. This eliminates
 the need for function calls, making the runtime more efficient. If the member
-function appears in the header-only, then its definition is outside of the class
-in a class interface[1].
+function appears in the header-only, then its definition is outside of the class[1].
 
 Furthermore, C++ uses public and private access modifiers, and in addition to constructors, 
 it has destructors that function similarly to the 'delete' operator. They are used 
@@ -133,14 +133,33 @@ This keeps with the C++ design but used a more Object Oriented approach.
 
 ## Simple Program example
 
+### Author(s): Cheryl Moser
 
 ```
-(Code blocks in markdown are done by adding three backticks before and after
-the code.)
+#include <iostream>
+#include <string>
+using namespace std;
 
-Write a simple program in your chosen language and include it as a code block in 
-your markdown file. Ensure that all topics listed above are represented in your 
-program.
+class Faculty{
+  public:
+    string name;
+    string course;
+    int salary = 1000000000;
+};
+
+class TA: public Faculty{
+  public:
+    string hours = "Office hours: 24/7/365";
+};
+
+int main() {
+  
+  TA t;
+  t.name = "Gabi";
+  t.course = "Programming Languages";
+  
+  std::cout << t.name << ": TA, " << t.course << "\nSalary: " << t.salary << " dollars!\nOffice hours: " << t.hours;
+}
 ```
 
 ## Reference List
