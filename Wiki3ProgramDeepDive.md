@@ -158,7 +158,7 @@ int main() {
   t.name = "Gabi";
   t.course = "Programming Languages";
   
-  std::cout << t.name << ": TA, " << t.course << "\nSalary: " << t.salary << " dollars!\nOffice hours: " << t.hours;
+  std::cout << t.name << ": TA, " << t.course << "\nSalary: " << t.salary << " dollars!\n" << t.hours;
 }
 ```
 
