@@ -209,19 +209,20 @@ class Faculty{
     string name;
     string course;
     int salary = 1000000000;
+
+
 };
 
 class TA: public Faculty{
   public:
     string hours = "Office hours: 24/7/365";
-    bool isAvailable = true;
-    
-   //Method to update availability
-  void updateAvailability(bool availability){
+bool isAvailable = true;
+
+//Method to update availability
+void updateAvailability(bool availability){
   isAvailable = availability;
 }
-
- //Method to give a raise by a percentage
+//Method to give a raise by a percentage
 int giveRaise(float percentage){
   int raise = static_cast<int>(salary *(percentage/100));
   salary += raise;
@@ -235,40 +236,41 @@ int main() {
   TA t;
   t.name = "Gabi";
   t.course = "Programming Languages";
-  
+
   //Giving a raise of 5% to the TA
   int raise = t.giveRaise(5.0f);
-  
-  int gabiInspiredComputerScienceStudentsWithEasyProblems = 10;
+
+  int gabiInspiredComputerScienceStudentsWithEasyProblems = 3;
 
   //define the tolerance of a TA 
-  int GabiToleranceFactor = 0
+  int gabiToleranceFactor = 0;
+  int howManyTimesToExplainTheSameIssueUntilUnderstood = 15;
   for(int issue = 0; issue < gabiInspiredComputerScienceStudentsWithEasyProblems ; issue++)
     {
-        int gabiCorrectedTheStudentsWayOfThinking = 1; //used as boolean 
-        while(gabiCorrectedTheStrudentsWayOfThinkig)  //just like java :P)
+        int gabiCorrectedTheStudentsWayOfThinking = 2; //used as boolean 
+        while(gabiCorrectedTheStudentsWayOfThinking)  //just like java :P)
         {
-            //get a responce if the problem was solved
-            std::cin >> responce;
-            if(responce > 0)
+            //see if we solved the issue yet
+            howManyTimesToExplainTheSameIssueUntilUnderstood--;
+            if(howManyTimesToExplainTheSameIssueUntilUnderstood < 1)
             {
                 //break out of while loop
                 gabiCorrectedTheStudentsWayOfThinking = 0;
+              
             } else {
                 gabiToleranceFactor++;
             }
         }
     }
-    
+
 
   //Updating availability status
-  if(gabiToleranceFactor > 15)
+  if(gabiToleranceFactor > 10)
   {
     t.updateAvailability(false);
   }
-   
-  std::cout << t.name << ": TA, " << t.course << "\nSalary: " << t.salary << " dollars!\n" << t.hours << "\nRaise:" << raise << " dollars!\n"
-   << "Availability: " << (t.isAvailable ? "Available" : "Not available") ;
+  
+  std::cout << t.name << ": TA, " << t.course << "\nSalary: " << t.salary << " dollars!\n" << t.hours << "\nRaise:" << raise << " dollars!\n" << "Availability: " << (t.isAvailable ? "Available" : "Not available") ;
 }
 ```
 
