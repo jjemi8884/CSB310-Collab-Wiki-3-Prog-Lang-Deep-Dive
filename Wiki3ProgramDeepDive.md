@@ -99,6 +99,7 @@ is not a consideration, allowing conversion to be used freely. Multiple assignme
 are not supported in C++.
 
 ## Statement-Level Control Structures
+### Author: Justin Jemison
 
 <img src=img/BingImageGen.jpg width="600"><br>
 <em>[2c] promp = Java, C, and C++, hanging out in a forest aliens contemplating the setting sun and what it all means</em>
@@ -179,6 +180,7 @@ and cleaning up any open tasks[1].
 ## Object-Oriented Programming
     
 ## Exception Handling and Event Handling
+### Author: Justin Jemison 
 <img src=img/2023_01_MicrosoftTeams-image-8.jpg width="600"><br>
 Standardized and accepted by ANSI in 1990, exception handling for C++, was the first C language 
 to have such a structure for error detection. Java also adopted the error handling form C++ along 
@@ -236,10 +238,35 @@ int main() {
   
   //Giving a raise of 5% to the TA
   int raise = t.giveRaise(5.0f);
+  
+  int gabiInspiredComputerScienceStudentsWithEasyProblems = 10;
+
+  //define the tolerance of a TA 
+  int GabiToleranceFactor = 0
+  for(int issue = 0; issue < gabiInspiredComputerScienceStudentsWithEasyProblems ; issue++)
+    {
+        int gabiCorrectedTheStudentsWayOfThinking = 1; //used as boolean 
+        while(gabiCorrectedTheStrudentsWayOfThinkig)  //just like java :P)
+        {
+            //get a responce if the problem was solved
+            std::cin >> responce;
+            if(responce > 0)
+            {
+                //break out of while loop
+                gabiCorrectedTheStudentsWayOfThinking = 0;
+            } else {
+                gabiToleranceFactor++;
+            }
+        }
+    }
+    
 
   //Updating availability status
-  t.updateAvailability(false);
-  
+  if(gabiToleranceFactor > 15)
+  {
+    t.updateAvailability(false);
+  }
+   
   std::cout << t.name << ": TA, " << t.course << "\nSalary: " << t.salary << " dollars!\n" << t.hours << "\nRaise:" << raise << " dollars!\n"
    << "Availability: " << (t.isAvailable ? "Available" : "Not available") ;
 }
