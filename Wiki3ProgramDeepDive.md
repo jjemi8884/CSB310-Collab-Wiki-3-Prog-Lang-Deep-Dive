@@ -6,7 +6,69 @@
 
 ## Data Types
 
+C++ supports a wide variety of data types and the programmer can select teh data 
+type appropriate to the need of the application. Data types specify the size and 
+types of values to be stored. However, storage representation and machine 
+instructions to manipulate each data type differ from machine to machine,
+although C++ instructions are identical on all machines[1].
+
+<img src=img/Datatype.png width="600"><br>
+
+Data Types in C++ are mainly divided into 3 types:
+
+1.Primary Data Types: These data types are built-in or predefined data types and can be used directly by the users to declare variables. These include
+int, char, boolean, floating point, double floating point, valueless or void, wide character.
+
+2.Derived Data Types: Derived Data types that are derived from the primitive or built-in datatypes are referred to as derived data types. 
+These are function, Array, Pointer, Reference.
+
+3.Abstract or User-Defined data Types: These data types are defined by the user itself. These can be class, structure, union and enumeration. 
+
 ## Expressions
+
+C++ expression consists of operators, constants, and variables which are arranged according to the rules of the language. It can also 
+contain function calls which return values. An expression can consist of one or more operands, zero or more operators to compute a value. 
+Every expression produces some value which is assigned to the variable with the help of an assignment operator[2].
+
+<img src=img/Expression.png width="600"><br>
+
+C++ expression consists of Constant, Integral, Float, Pointer, Relational, Logical, Bitwise, Special Assignment Expressions.
+
+Constant expressions:
+A constant expression is an expression that includes only constant values. This is an expression whose value is determined at compile time
+but evaluated at run time. It can include integer, character, floating-point constants, and enumerations.
+
+Integral Expressions:
+An integer expression is an expression that produces the integer value as output after performing all the explicit and implicit conversions.
+
+Float Expressions:
+A float expression is an expression that produces floating-point value as output after performing all the explicit and implicit conversions.
+
+Pointer Expressions:
+A pointer expression is an expression that produces address value as an output.
+
+Relational Expressions:
+A relational expression is an expression that produces a value of type bool, which can be either true or false. It is also known as a 
+boolean expression. When arithmetic expressions are used on both sides of the relational operator, arithmetic expressions are evaluated 
+first, and then their results are compared.
+
+Logical Expressions:
+A logical expression is an expression that combines two or more relational expressions and produces a bool type value. The logical 
+operators are '&&' and '||' that combines two or more relational expressions.
+
+Bitwise Expressions:
+A bitwise expression is an expression which is used to manipulate the data at a bit level. They are basically used to shift the bits.
+
+Special Assignment Expressions:
+Special assignment expressions are the expressions which can be further classified depending upon the value assigned to the variable.
+
+
+
+
+
+
+
+
     
 ## Assignment Statements
 
@@ -150,6 +212,20 @@ class Faculty{
 class TA: public Faculty{
   public:
     string hours = "Office hours: 24/7/365";
+    bool isAvailable = true;
+    
+   //Method to update availability
+  void updateAvailability(bool availability){
+  isAvailable = availability;
+}
+
+ //Method to give a raise by a percentage
+int giveRaise(float percentage){
+  int raise = static_cast<int>(salary *(percentage/100));
+  salary += raise;
+  return raise;
+
+}
 };
 
 int main() {
@@ -158,7 +234,14 @@ int main() {
   t.name = "Gabi";
   t.course = "Programming Languages";
   
-  std::cout << t.name << ": TA, " << t.course << "\nSalary: " << t.salary << " dollars!\n" << t.hours;
+  //Giving a raise of 5% to the TA
+  int raise = t.giveRaise(5.0f);
+
+  //Updating availability status
+  t.updateAvailability(false);
+  
+  std::cout << t.name << ": TA, " << t.course << "\nSalary: " << t.salary << " dollars!\n" << t.hours << "\nRaise:" << raise << " dollars!\n"
+   << "Availability: " << (t.isAvailable ? "Available" : "Not available") ;
 }
 ```
 
@@ -170,3 +253,7 @@ CO, USA: Pearson Education, Inc., 2012.
 [2c-image] "C++ Tutorial", W3 Schools. 
 [C++ Tutorial](https://www.w3schools.com/cpp/cpp_operators.asp) 
 (accessed may 5, 2024).
+
+[1R] "C++ Data Types" https://www.geeksforgeeks.org/cpp-data-types/# (accessed May 16, 2024).
+
+[2R] "C++ Expression" https://www.javatpoint.com/cpp-expression (accessed May 16, 2024).
