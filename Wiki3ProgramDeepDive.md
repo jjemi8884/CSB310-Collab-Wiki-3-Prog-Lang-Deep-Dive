@@ -1,12 +1,23 @@
-(Table of contents will go here)
-
 # Programming Language Deep Dive: C++
 
 ### *Team Crystallized Ember*
 
-## Data Types
+# Table of Contents
 
-C++ supports a wide variety of data types and the programmer can select teh data 
+* [Data Types](#data-types)
+* [Expressions](#expressions)
+* [Assignment Statements](#assignment-statements)
+* [Statement-Level Control Structures](#statement-level-control-structures)
+* [Subprograms](#subprograms)
+* [Abstract Data Types and Encapsulation Concepts](#abstract-data-types-and-encapsulation-concepts)
+* [Object-Oriented Programming](#object-oriented-programming)
+* [Example Program](#simple-program-example)
+* [Reference List](#reference-list)
+
+## Data Types
+### Author: Rojee Koju
+
+C++ supports a wide variety of data types and the programmer can select the data 
 type appropriate to the need of the application. Data types specify the size and 
 types of values to be stored. However, storage representation and machine 
 instructions to manipulate each data type differ from machine to machine,
@@ -19,12 +30,13 @@ Data Types in C++ are mainly divided into 3 types:
 1.Primary Data Types: These data types are built-in or predefined data types and can be used directly by the users to declare variables. These include
 int, char, boolean, floating point, double floating point, valueless or void, wide character.
 
-2.Derived Data Types: Derived Data types that are derived from the primitive or built-in datatypes are referred to as derived data types. 
+2.Derived Data Types: Derived Data types that are derived from the primitive or built-in data types are referred to as derived data types. 
 These are function, Array, Pointer, Reference.
 
 3.Abstract or User-Defined data Types: These data types are defined by the user itself. These can be class, structure, union and enumeration. 
 
 ## Expressions
+### Author: Rojee Koju
 
 C++ expression consists of operators, constants, and variables which are arranged according to the rules of the language. It can also 
 contain function calls which return values. An expression can consist of one or more operands, zero or more operators to compute a value. 
@@ -62,16 +74,7 @@ A bitwise expression is an expression which is used to manipulate the data at a 
 Special Assignment Expressions:
 Special assignment expressions are the expressions which can be further classified depending upon the value assigned to the variable.
 
-
-
-
-
-
-
-
-    
 ## Assignment Statements
-
 ### Author: Cheryl Moser
 
 For simple assignments, C++ uses a single equal sign ("=") as the operator -- 
@@ -80,17 +83,17 @@ This way of distinguishing between assignment-equals and comparison-equals is th
 same as we are used to seeing in Java. C++ also has ten compound assignment operators. 
 These are operators that serve as shorthand for when the left side of the operator 
 is also the first operand on the right side. For example, the expressions x = x + 2, 
-and x += 2 are synonymous[1].
+and x += 2 are synonymous[3].
 
 <img src=img/assignmentW3.png width="600"><br>
-<em>[2c] Compound Assignment Operator List</em>
+<em>[4] Compound Assignment Operator List</em>
 
 Unary assignment operators are valid in C++, and they can serve as negation (-1), 
 incrementing (count ++), or decrementing (count --). Placement of the unary increment 
 or decrement operator is important, as the expressions “total = count ++,” and 
 “total = ++ count” are not the same assignment. In the first expression, count is
 first assigned to sum, and then incremented; in the latter, count is incremented
-before being assigned to sum[1].
+before being assigned to sum[3].
 
 Expressions can be used within an assignment operation, though at the expense of 
 readability. Mixed-mode assignments are also supported via implicit and explicit 
@@ -102,10 +105,10 @@ are not supported in C++.
 ### Author: Justin Jemison
 
 <img src=img/BingImageGen.jpg width="600"><br>
-<em>[2c] promp = Java, C, and C++, hanging out in a forest aliens contemplating the setting sun and what it all means</em>
+<em>Prompt = Java, C, and C++, hanging out in a forest aliens contemplating the setting sun and what it all means</em>
 <P>C++ statement level control structures are the evolutionary step between the C language 
 and Java; the “For” loop control statement is a prime example. In C you can define the control 
-variable anywhere before the For loop and you can have multiple control statement within the loop. 
+variable anywhere before the For loop, and you can have multiple control statement within the loop. 
 The Scope of that variable is the entire function. C++ created restriction that any variable 
 created in the loop, will have its scope defined in the loop. Java inherited this trait from C++. 
 <p>example:
@@ -129,7 +132,7 @@ Another think that C++ did was to only ren the first expression in the “For”
 at the beginning and then run the other expressions each iteration of the loop. The first expression
 can also define a variable that can be used to control the loop and will stay within the scope of the for-loop.
 
-Taking a look at the “If” “then” “Else statement, C++ allowed, just like the “for” statement, an arithmetic  
+Taking a look at the “If” “then” “Else" statement, C++ allowed, just like the “for” statement, an arithmetic  
 expression along with a Boolean expression can be used within the control statement of the “IF” expression.  
 Java deviated from this practice and only uses Boolean expressions to control IF statements.
 The multi-selectors are the same between Java and C++ where they use the Switch(integer) and each case is a 
@@ -140,9 +143,9 @@ As shown above C++ is the evolution steppingstone from C to Java. It is less res
 capabilities than C.
 
 ## Subprograms
+### Author: Mika Kitazumi
     
 ## Abstract Data Types and Encapsulation Concepts
-
 ### Author: Cheryl Moser
 
 C++ supports abstract data types (ADT) through classes and structs. A struct is 
@@ -151,14 +154,14 @@ a point in two-dimensional space would contain two data fields: x and y. A class
 is a type containing data fields (data members), and member functions. Objects of
 the class (instances) can access the set of public methods. Member functions of
 a class are shared among all instances; however, instances have their own set
-of data members[1].
+of data members[3].
 
-The data members of an object can have different scopes. These include[1]:
+The data members of an object can have different scopes. These include[3]:
 - *Static:*  Created with the "static" keyword inside the class definition and 
     referenced directly by name. The lifetime of static members is for the duration
     of the program execution. Static members are shared among class instances.
     
-- *Stack dynamic:* Created in the variable declaration inside of a function, and 
+- *Stack dynamic:* Created in the variable declaration inside a function, and 
     also referenced directly. This member exists on the functions stack frame, and
     it is destroyed at the end of function execution.
     
@@ -170,14 +173,15 @@ Member functions can appear in the class body or in the class header. For cases
 where they appear only in the header, or in both header and body, the function is 
 inlined, wherein function code is copied into the calling code. This eliminates
 the need for function calls, making the runtime more efficient. If the member
-function appears in the header-only, then its definition is outside of the class[1].
+function appears in the header-only, then its definition is outside the class[3].
 
 Furthermore, C++ uses public and private access modifiers, and in addition to constructors, 
 it has destructors that function similarly to the 'delete' operator. They are used 
 at the end of an object's lifetime for deallocating memory, returning resources 
-and cleaning up any open tasks[1].
+and cleaning up any open tasks[3].
     
 ## Object-Oriented Programming
+### Author: Mika Kitazumi
     
 ## Exception Handling and Event Handling
 ### Author: Justin Jemison 
@@ -193,11 +197,10 @@ programmer to dictate when an exception can be thrown. C++ only allowed user def
 except for the “unexpected” exception which is not very descriptive. There are libraries that have 
 been created with exceptions installed. For example, the Math library has the exception overflow error.
 Java took was C++ was doing with exception handling and expanded upon it creating the Throwable class.
-This keeps with the C++ design but used a more Object Oriented approach.
+This keeps with the C++ design but used a more Object-Oriented approach.
 
 ## Simple Program example
-
-### Author(s): Cheryl Moser
+### Author: Team Crystallized Ember
 
 ```
 #include <iostream>
@@ -209,26 +212,24 @@ class Faculty{
     string name;
     string course;
     int salary = 1000000000;
-
-
 };
 
 class TA: public Faculty{
   public:
     string hours = "Office hours: 24/7/365";
-bool isAvailable = true;
+    bool isAvailable = true;
 
-//Method to update availability
-void updateAvailability(bool availability){
-  isAvailable = availability;
-}
-//Method to give a raise by a percentage
-int giveRaise(float percentage){
-  int raise = static_cast<int>(salary *(percentage/100));
-  salary += raise;
-  return raise;
-
-}
+    //Method to update availability
+    void updateAvailability(bool availability){
+      isAvailable = availability;
+    }
+    
+    //Method to give a raise by a percentage
+    int giveRaise(float percentage){
+      int raise = static_cast<int>(salary *(percentage/100));
+      salary += raise;
+      return raise;
+    }
 };
 
 int main() {
@@ -263,7 +264,6 @@ int main() {
         }
     }
 
-
   //Updating availability status
   if(gabiToleranceFactor > 10)
   {
@@ -276,13 +276,13 @@ int main() {
 
 ## Reference List
 
-[1c] R.W. Sebesta, Concepts of Programming Languages, 10th ed. Colorado Springs, 
+[1] "C++ Data Types" https://www.geeksforgeeks.org/cpp-data-types/# (accessed May 16, 2024).
+
+[2] "C++ Expression" https://www.javatpoint.com/cpp-expression (accessed May 16, 2024).
+
+[3] R.W. Sebesta, Concepts of Programming Languages, 10th ed. Colorado Springs, 
 CO, USA: Pearson Education, Inc., 2012.
 
-[2c-image] "C++ Tutorial", W3 Schools. 
+[4] "C++ Tutorial", W3 Schools. 
 [C++ Tutorial](https://www.w3schools.com/cpp/cpp_operators.asp) 
-(accessed may 5, 2024).
-
-[1R] "C++ Data Types" https://www.geeksforgeeks.org/cpp-data-types/# (accessed May 16, 2024).
-
-[2R] "C++ Expression" https://www.javatpoint.com/cpp-expression (accessed May 16, 2024).
+(accessed May 5, 2024).
