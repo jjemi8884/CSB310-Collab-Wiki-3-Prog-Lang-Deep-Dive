@@ -114,9 +114,9 @@ are not supported in C++.
 <img src=img/BingImageGen.jpg width="600"><br>
 <em>Prompt = Java, C, and C++, hanging out in a forest aliens contemplating the setting sun and what it all means</em>
 <P>C++ statement level control structures are the evolutionary step between the C language 
-and Java; the “For” loop control statement is a prime example. In C you can define the control 
-variable anywhere before the For loop, and you can have multiple control statement within the loop. 
-The Scope of that variable is the entire function. C++ created restriction that any variable 
+and Java; the “For” loop control statement is a prime example. In C, you can define the control 
+variable anywhere before the For loop, and you can have multiple control statements within the loop. 
+The Scope of the variable is the entire function. C++ created restrictions that any variable 
 created in the loop, will have its scope defined in the loop. Java inherited this trait from C++. 
 <p>example:
 <p>In C programming
@@ -127,27 +127,27 @@ created in the loop, will have its scope defined in the loop. Java inherited thi
 <p>}
 <p>Print (count);
 <p>Output  = 10
-<P>The small code above will work in C because you have defined the outside. Where at in C++ 
-you can define the count in the for-loop statement itself.
+<P>The small code above will work in C because you defined the variable (Count) before the for-loop. Whereas in C++, 
+you can define the count in the for-loop control statement.
 <p>For (int count = 0; count <=10; count++){
 <p>//do something.
 <p>}
 <P></P>
-C++ also added the ability to have Boolean within the statement. In C this was not available 
-and in Java this is the only available option of the second statement in the “For” loop control statement.
-Another think that C++ did was to only ren the first expression in the “For” loop constructor 
-at the beginning and then run the other expressions each iteration of the loop. The first expression
-can also define a variable that can be used to control the loop and will stay within the scope of the for-loop.
+C++ also added the ability to have Boolean operator within the statement. In C this was not available 
+and in Java this is the only available option of the second control statement in the For-loop.
+C++ also stipulated the rule that the first expression in the For-loop control structure would only run the first time, 
+the other two expressions will run each iteration of the loop. The first expression
+can also define a variable that can be used to control the loop and will stay within the scope of the For-loop.
 
-Taking a look at the “If” “then” “Else" statement, C++ allowed, just like the “for” statement, an arithmetic  
-expression along with a Boolean expression can be used within the control statement of the “IF” expression.  
-Java deviated from this practice and only uses Boolean expressions to control IF statements.
-The multi-selectors are the same between Java and C++ where they use the Switch(integer) and each case is a 
-different integer (case ..) and a Break statement has to be used to not execute the cases after the selected case. 
-There is also a “Default” case that can be used. C++. Java did take a more restrictive approach in not allowing 
-case expressions outside the top of the body of the “Switch” statement.
-As shown above C++ is the evolution steppingstone from C to Java. It is less restricted than Java and has more 
-capabilities than C.
+Taking a look at the “If”, “then”, “Else", statements C++ allowed an arithmetic  
+expression along with a Boolean expression that can be used within the control statement of the “IF” expression.  
+Java deviated from this practice and only used Boolean expressions to control IF statements.
+The multi-selectors are the same between Java and C++ where they both use the Switch(integer) 
+and a separate integer for each case. A Break statement must be used to terminate out of the case statement, 
+or cases after the selected case will execute. There is also a “Default” case that can be used. 
+C++. Java did take a more restrictive approach in not allowing case expressions outside the top of the body of 
+the “Switch” statement. As shown above C++ is the evolution steppingstone from C to Java. It is less restricted 
+than Java and has more capabilities than C.
 
 ## Subprograms
 ### Author: Mika Kitazumi
@@ -193,18 +193,18 @@ and cleaning up any open tasks[3].
 ## Exception Handling and Event Handling
 ### Author: Justin Jemison 
 <img src=img/2023_01_MicrosoftTeams-image-8.jpg width="600"><br>
-Standardized and accepted by ANSI in 1990, exception handling for C++, was the first C language 
-to have such a structure for error detection. Java also adopted the error handling form C++ along 
-with other syntax as listed in statement level control section. C++ introduced the reserved word 
-“Try” where the scope of an exception was limited to the try {} block. The Catch statement would 
-also grant programmer the ability to stop a run time error by “catching the error or exception” 
-and along the programmer to take action to current the error in program and stop it from crashing.
-C++ also included a “Binging” exception that can be used with the “Throw” clause that will allow the
-programmer to dictate when an exception can be thrown. C++ only allowed user defined exceptions 
-except for the “unexpected” exception which is not very descriptive. There are libraries that have 
+Standardized and accepted by ANSI in 1990, exception handling for C++ was the first C language 
+to have such a structure for error detection. Java also adopted the error handling from C++.
+C++ introduced the reserved word “Try” where the scope of an exception was limited to the try {} 
+block. The Catch statement would also grant programmers the ability to stop a run time error by 
+“catching the error or exception.” This allowed programmers to take action to correct the error 
+ in the program and stop it from crashing the program. C++ also allowed programmers to use the “Throw” 
+clause that will allow the programmer to dictate when an exception can be thrown. C++ only allowed user 
+defined exceptions. There is a default except called the “unexpected” exception, it is not very descriptive and does
+not assist in troubleshooting where a problem may be. There are libraries that have 
 been created with exceptions installed. For example, the Math library has the exception overflow error.
-Java took was C++ was doing with exception handling and expanded upon it creating the Throwable class.
-This keeps with the C++ design but used a more Object-Oriented approach.
+Java took what C++ was doing with exception handling and expanded upon it creating the Throwable class.
+This keeps with the C++ design but uses a more Object-Oriented approach.
 
 ## Simple Program example
 ### Author: Team Crystallized Ember
