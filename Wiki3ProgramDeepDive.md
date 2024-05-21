@@ -177,11 +177,11 @@ y = y_val;
 }
 };
 ```
-Here are some key benefits of using subprograms:
+Key benefits of using subprograms:
 - Reusability: Subprograms can be called from multiple locations in your code, eliminating the need to duplicate code.
 - Modularity: Subprograms break down complex programs into smaller, manageable units, improving code organization and maintainability.
 - Readability: Subprograms with descriptive names enhance code clarity and make it easier to understand the program's logic.
-By effectively utilizing subprograms, you can create well-structured, efficient, and maintainable C++ programs.
+By effectively utilizing subprograms, you can create well-structured, efficient, and maintainable C++ programs.[5]
 
     
 ## Abstract Data Types and Encapsulation Concepts
