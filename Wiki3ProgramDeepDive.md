@@ -173,7 +173,8 @@ int add(int x, int y) {
 return x + y;
 }
 ```
-- Member functions: Member functions are functions associated with a class (a user-defined blueprint for creating objects). They operate on the data (member variables) of a specific object and can access both public and private members of the class. Member functions are declared within the class definition.
+- Member functions: Member functions are functions associated with a class (a user-defined blueprint for creating objects).
+They operate on the data (member variables) of a specific object and can access both public and private members of the class. Member functions are declared within the class definition.
 ```
 class Point {
 public:
@@ -187,11 +188,11 @@ y = y_val;
 }
 };
 ```
-Here are some key benefits of using subprograms:
+Key benefits of using subprograms:
 - Reusability: Subprograms can be called from multiple locations in your code, eliminating the need to duplicate code.
 - Modularity: Subprograms break down complex programs into smaller, manageable units, improving code organization and maintainability.
 - Readability: Subprograms with descriptive names enhance code clarity and make it easier to understand the program's logic.
-By effectively utilizing subprograms, you can create well-structured, efficient, and maintainable C++ programs.
+By effectively utilizing subprograms, you can create well-structured, efficient, and maintainable C++ programs.[5]
 
     
 ## Abstract Data Types and Encapsulation Concepts
@@ -259,6 +260,7 @@ improves code organization and maintainability.
 - Polymorphism: Polymorphism allows for flexible and dynamic program behavior. Objects of different types can respond differently to the same method call, improving code flexibility.[6]
 
 A great example of this in action is down below in the coding example.
+
 ## Exception Handling and Event Handling
 ### Author: Justin Jemison 
 <img src=img/2023_01_MicrosoftTeams-image-8.jpg width="600"><br>
