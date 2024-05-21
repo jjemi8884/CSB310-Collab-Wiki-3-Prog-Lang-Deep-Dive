@@ -352,3 +352,7 @@ CO, USA: Pearson Education, Inc., 2012.
 [4] "C++ Tutorial", W3 Schools. 
 [C++ Tutorial](https://www.w3schools.com/cpp/cpp_operators.asp) 
 (accessed May 5, 2024).
+
+[5]“C++ OOP (Object-Oriented Programming),” www.w3schools.com. https://www.w3schools.com/cpp/cpp_oop.asp
+
+[6] J.Cortadella et al. "Introduction to Programming (in C++) Subprograms:procedures and functions". Dept. CS, UPC
