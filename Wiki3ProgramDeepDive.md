@@ -151,6 +151,38 @@ than Java and has more capabilities than C.
 
 ## Subprograms
 ### Author: Mika Kitazumi
+Subprograms, also known as functions or methods, are fundamental building blocks 
+in C++. They promote code reusability, modularity, and readability. Subprograms encapsulate 
+a specific task or set of instructions that can be called from other parts of your program.
+There are two main types of subprograms in C++:
+- Functions: Functions are independent blocks of code that perform a specific task. 
+They can take zero or more arguments (data passed to the function) and optionally return a value. 
+Functions are declared with the return type, followed by the function name and parentheses for arguments.
+```
+int add(int x, int y) {
+return x + y;
+}
+```
+- Member functions: Member functions are functions associated with a class (a user-defined blueprint for creating objects). They operate on the data (member variables) of a specific object and can access both public and private members of the class. Member functions are declared within the class definition.
+```
+class Point {
+public:
+int x;
+int y;
+
+// Member function to set the coordinates of a point
+void setPoint(int x_val, int y_val) {
+x = x_val;
+y = y_val;
+}
+};
+```
+Here are some key benefits of using subprograms:
+- Reusability: Subprograms can be called from multiple locations in your code, eliminating the need to duplicate code.
+- Modularity: Subprograms break down complex programs into smaller, manageable units, improving code organization and maintainability.
+- Readability: Subprograms with descriptive names enhance code clarity and make it easier to understand the program's logic.
+By effectively utilizing subprograms, you can create well-structured, efficient, and maintainable C++ programs.
+
     
 ## Abstract Data Types and Encapsulation Concepts
 ### Author: Cheryl Moser
@@ -189,7 +221,34 @@ and cleaning up any open tasks[3].
     
 ## Object-Oriented Programming
 ### Author: Mika Kitazumi
-    
+Object-oriented programming (OOP) is a fundamental programming paradigm that revolves
+around objects.  An object encapsulates data (attributes) and the code that operates 
+on that data (methods).  This concept of data hiding promotes modularity, reusability, and
+maintainability in C++ programs.
+
+*Key Concepts in OOP*
+- Classes: Classes are blueprints that define the properties (attributes) and behavior 
+(methods) of objects.  They act as templates for creating objects. A class can contain:
+
+  - Member variables: These variables store the data (attributes) of an object. They can be declared as public, private, or protected, specifying their accessibility to other parts of the program.
+  - Member functions: These functions define the behavior of an object. They can access and manipulate the object's member variables.
+  - Objects:  Objects are instances of a class.  They represent real-world entities with specific attributes and behaviors.  An object is created using the new operator and calling the class constructor.
+
+- Inheritance:  Inheritance allows new classes (derived classes) to inherit properties and behaviors from existing classes (base classes).  This promotes code reusability and enables the creation of class hierarchies with specialized functionalities.
+
+- Polymorphism:  Polymorphism allows objects of different classes to respond differently to the same method call.  This is achieved through function overloading (having multiple methods with the same name but different parameter lists) and virtual functions (allowing derived classes to override base class methods).
+
+- Encapsulation:  Encapsulation refers to the bundling of data (member variables) and the methods that operate on that data within a class.  This concept promotes data hiding, as member variables can be declared as private, restricting direct access from outside the class.  Methods are used to control access and manipulation of the data.
+
+Benefits of OOP in C++
+- Modularity: OOP breaks down complex programs into smaller, manageable units (classes and objects). This 
+improves code organization and maintainability.
+- Reusability: As mentioned previously, Classes can be reused to create multiple objects, reducing code duplication and development time.
+- Data Hiding: Encapsulation protects data integrity by restricting direct access to member variables. Methods provide controlled access to the data, promoting data security.
+- Inheritance: Inheritance enables code reuse and promotes code maintainability. Derived classes can inherit from base classes, extending functionality without modifying existing code.
+- Polymorphism: Polymorphism allows for flexible and dynamic program behavior. Objects of different types can respond differently to the same method call, improving code flexibility.
+
+A great example of this in action is down below in the coding example.
 ## Exception Handling and Event Handling
 ### Author: Justin Jemison 
 <img src=img/2023_01_MicrosoftTeams-image-8.jpg width="600"><br>
