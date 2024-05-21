@@ -157,7 +157,7 @@ a specific task or set of instructions that can be called from other parts of yo
 There are two main types of subprograms in C++:
 - Functions: Functions are independent blocks of code that perform a specific task. 
 They can take zero or more arguments (data passed to the function) and optionally return a value. 
-Functions are declared with the return type, followed by the function name and parentheses for arguments.
+Functions are declared with the return type, followed by the function name and parentheses for arguments.[5]
 ```
 int add(int x, int y) {
 return x + y;
@@ -246,7 +246,7 @@ improves code organization and maintainability.
 - Reusability: As mentioned previously, Classes can be reused to create multiple objects, reducing code duplication and development time.
 - Data Hiding: Encapsulation protects data integrity by restricting direct access to member variables. Methods provide controlled access to the data, promoting data security.
 - Inheritance: Inheritance enables code reuse and promotes code maintainability. Derived classes can inherit from base classes, extending functionality without modifying existing code.
-- Polymorphism: Polymorphism allows for flexible and dynamic program behavior. Objects of different types can respond differently to the same method call, improving code flexibility.
+- Polymorphism: Polymorphism allows for flexible and dynamic program behavior. Objects of different types can respond differently to the same method call, improving code flexibility.[6]
 
 A great example of this in action is down below in the coding example.
 ## Exception Handling and Event Handling
