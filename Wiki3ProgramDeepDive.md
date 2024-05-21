@@ -120,18 +120,28 @@ The Scope of the variable is the entire function. C++ created restrictions that 
 created in the loop, will have its scope defined in the loop. Java inherited this trait from C++. 
 <p>example:
 <p>In C programming
-<p>int count = 0;
-<p>for (count = 1; count < ; count++){
-<p>//do something
-<p>Goto -> (outside for loop)
-<p>}
-<p>Print (count);
-<p>Output  = 10
+
+```
+int count = 0;
+for (count = 1; count < ; count++){
+    //do something
+    Goto -> (outside for loop)
+}
+Print (count);
+Output  = 10
+```
+
 <P>The small code above will work in C because you defined the variable (Count) before the for-loop. Whereas in C++, 
 you can define the count in the for-loop control statement.
-<p>For (int count = 0; count <=10; count++){
-<p>//do something.
-<p>}
+
+```
+For (int count = 0; count <=10; count++){
+//do something.
+}
+```
+
+
+
 <P></P>
 C++ also added the ability to have Boolean operator within the statement. In C this was not available 
 and in Java this is the only available option of the second control statement in the For-loop.
