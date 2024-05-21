@@ -14,6 +14,13 @@
 * [Example Program](#simple-program-example)
 * [Reference List](#reference-list)
 
+<br>For our final wiki, we have chosen to cover the C++ programming language. We made 
+this selection, in part, because of the popularity of the C-languages, as well as 
+C++'s status in the current job market. Below, we discuss several language features, 
+including data types, expressions, assignments statements, control structures, subprograms, 
+abstract data types and encapsulation, and object-oriented programming. And finally, 
+we showcase a simple program, featuring our very own TA, Gabi. Enjoy!
+
 ## Data Types
 ### Author: Rojee Koju
 
